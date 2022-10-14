@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./index.js"></script>
+  <title>Ejemplo formulario</title>
+</head>
+<body>
+  <form id="form" action="process.php" method="POST" enctype="multipart/form-data">
+    <label for="text">Input de texto</label>
+    <input type="text" name="text" id="text">
+
+    <label for="passwd">Input de contraseña</label>
+    <input type="password" name="passwd" id="passwd">
+
+    <label for="checkbox">Checkbox</label>
+    <input type="checkbox" name="checkbox" id="checkbox">
+
+    <p>Radiobutton</p>
+    <label>
+      Opción 1
+      <input type="radio" name="radio" id="radio1" value="1">
+    </label>
+    <label>
+      Opción 2
+      <input type="radio" name="radio" id="radio2" value="2">
+    </label>
+
+    <label for="select">Desplegable de selección</label>
+    <select name="select[]" id="select">
+      <option value="-1" selected>--Seleccione--</option>
+      <option value="1">Uno</option>
+      <option value="2">Dos</option>
+      <option value="3">Tres</option>
+    </select>
+
+    <label for="file">Input file</label>
+    <input type="file" name="file" id="file">
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
